@@ -50,7 +50,6 @@
     }
 
     // как рисовать каждую фигуру
-    // https://tetris.fandom.com/wiki/SRS
     const tetrominos = {
       'I': [
         [0,0,0,0],
@@ -111,7 +110,6 @@
 
 
     // Функция возвращает случайное число в заданном диапазоне
-    // https://stackoverflow.com/a/1527820/2124254
     function getRandomInt(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
@@ -120,7 +118,6 @@
     }
 
     // создаём последовательность фигур, которая появится в игре
-    //https://tetris.fandom.com/wiki/Random_Generator
     function generateSequence() {
       // тут — сами фигуры
       const sequence = ['I', 'J', 'L', 'O', 'S', 'T', 'Z'];
@@ -161,7 +158,6 @@
     }
 
     // поворачиваем матрицу на 90 градусов
-    // https://codereview.stackexchange.com/a/186834
     function rotate(matrix) {
       const N = matrix.length - 1;
       const result = matrix.map((row, i) =>
